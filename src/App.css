@@ -1,0 +1,66 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: system-ui;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.movies {
+  margin: 0;
+  padding: 0 1rem;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  list-style: none;
+}
+
+.movie{
+  text-align: center;
+}
+
+.movie h2, .movie p{
+  padding: 0;
+}
+
+.movie img {
+  border-radius: .5rem;
+
+}
+
+input {
+  margin: 0 1rem;
+  padding: .5rem;
+  border: none;
+  border-radius: .5rem;
+  background-color: #efefef;
+}
+
+button {
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: .5rem;
+  cursor: pointer;
+  background-color: #737373;
+  color: #ffffff;
+}
+
+button:hover {
+  opacity: .7;
+}
